@@ -13,7 +13,7 @@ guessBtn[0].addEventListener(`click`,(e)=>{
     num = input.value;
     numguess++;
     if(num == n){
-        welcoming[0].innerHTML = `<h1>Congratulation!</h1>`;
+        welcoming[0].innerHTML = `<h1>Congratulation!<br>The number was ${n}</h1>`;
         result.innerHTML = `<h2>You Guess the number in ${numguess} attempts</h2>`
     }
     else if(num < n){
