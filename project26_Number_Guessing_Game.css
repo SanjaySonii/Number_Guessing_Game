@@ -1,0 +1,64 @@
+:root{
+    --border : 2px solid red;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    background-color: blueviolet;
+    width: 100%;
+    height: fit-content;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90vh;
+    margin: 2rem auto;
+    border: var(--border);
+    background-color: skyblue;
+}
+.welcoming , #result,#guesses{
+    text-align: center;
+    margin: 2rem 1rem;
+}
+form{
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: var(--border);
+    margin: auto;
+    background-color: coral;
+}
+#input{
+    width: 6rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: deeppink;
+    text-align: center;
+}
+form button{
+    background-color: rgb(172, 128, 128);
+    color: rgb(9, 241, 152);
+    width: 7rem;
+    margin: .5rem 0;
+    font-weight: 900;
+    font-size: larger;
+    border-radius: 10rem;
+    transition: all 2s;
+}
+form button:hover{
+    color: rgb(78, 30, 30);
+    background-color: rgb(9, 241, 152);
+}
+
+@media screen and (max-width : 360px) {
+    .welcoming{
+        font-size: small;
+    }
+}
